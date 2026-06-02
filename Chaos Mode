@@ -19,7 +19,7 @@ local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
 
 -----/Settings/-----
 local Settings = {
-	["ChaosInterval"] = 5;
+	["ChaosInterval"] = 15;
 	["ChaosHard"] = 1;
 }
 
