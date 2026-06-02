@@ -32,7 +32,7 @@ end
 while true do
 	task.wait(Settings["ChaosInterval"])
 	
-	local RandomEvent = math.random(1, 5)
+	local RandomEvent = math.random(1, 4)
 	
 	spawn(function()
 		if RandomEvent == 1 then EventChaos("Flip")
@@ -70,12 +70,6 @@ while true do
 			BodyVelocity.Parent = HumanoidRootPart
 			
 			Debris:AddItem(BodyVelocity, 0.1)
-		end
-	end)
-	
-	spawn(function()
-		if RandomEvent == 5 then EventChaos("Reset")
-			Character:BreakJoints()
 		end
 	end)
 end
